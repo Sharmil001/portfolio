@@ -1,29 +1,31 @@
 import React from 'react'
 import home1 from '../img/home1.png'
+import { About, Description, Image, Hide } from './style'
 
 const AboutSection = () => {
     return(
-        <div>
-            <div className="description">
+        <About>
+            <Description>
                 <div className="title">
-                    <div className="hide">
-                        <h2>We work to make</h2>
-                    </div>
-                    <div className="hide">
-                        <h2>your <span>dream's</span> come</h2>
-                    </div>
-                    <div className="hide">
-                        <h2>true.</h2>
-                    </div>
+                    <Hide>
+                        <h2>I Am </h2>
+                    </Hide>
+                    <Hide>
+                        <h2><span>Sharmil Adroja</span></h2>
+                    </Hide>
+                    <Hide>
+                        <h2>A Developer</h2>
+                    </Hide>
                 </div>
-                <p>contact me for any frontend and backend development </p>
+                <p>Contact us for any webdevelopment work</p>
                 <button>Contact US</button>
-            </div>
-            <div className="image">
+            </Description>
+            <Image>
                 <img src={home1} alt="guy with camera"/>
-            </div>
-        </div>
+            </Image>
+        </About>
     )
 }
+
 
 export default AboutSection;
